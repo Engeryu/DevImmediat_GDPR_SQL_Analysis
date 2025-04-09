@@ -1,0 +1,30 @@
+% @Author: Engeryu
+% @Date:   1970-01-01 01:00:00
+% @Last Modified by:   Engeryu
+% @Last Modified time: 2025-04-10 01:41:46
+\documentclass{article}
+\usepackage{geometry}
+\geometry{a4paper, margin=1in} % Vous pouvez ajuster les marges ici
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % Efface les en-têtes et pieds de page par défaut
+
+% Définition de l'en-tête (à gauche : titre, au centre : vide, à droite : auteur)
+\fancyhead[L]{\footnotesize \leftmark}
+\fancyhead[C]{}
+\fancyhead[R]{\footnotesize \rightmark}
+
+% Définition du pied de page (à gauche : vide, au centre : vide, à droite : numéro de page)
+\fancyfoot[L]{}
+\fancyfoot[C]{}
+\fancyfoot[R]{\footnotesize \thepage}
+
+\renewcommand{\headrulewidth}{0.5pt} % Épaisseur de la ligne sous l'en-tête
+\renewcommand{\footrulewidth}{0.5pt} % Épaisseur de la ligne au-dessus du pied de page
+
+\usepackage{lipsum} % Facultatif, pour du texte de remplissage
+
+\begin{document}
+$body$
+\end{document}
